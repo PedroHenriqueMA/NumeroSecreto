@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --font-family: 'Poppins', sans-serif;
+
+    --bg-dark: #2C3333;
+    --primary-dark: #E7F6F2;
+    --secondary-dark: #395B64;
+    --terciary-dark: #A5C9CA;
+
+    --bg-light: #DEF5E5;
+    --primary-light: #8EC3B0;
+    --secondary-light: #9ED5C5;
+    --terciary-light: #BCEAD5;
+
+    --modo-escuro-lua: '\f186';
+    --modo-escuro-sol: '\f185';
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    font-family: var(--font-family);
+    transition: .5s;
+}
+.bg-dark{
+    background-color: var(--bg-dark);
+    color: var(--primary-dark);
+}
+.bg-light{
+    background-color: var(--bg-light);
+    color: var(--primary-light);
+}
+h1{
+    font-size: 3.75em;
+}
+h2{
+    font-size: 2.75em;
+}
+h3{
+    font-size: 2em;
+}
+
+.mensagem{
+    font-size: 1.25em;
+    margin-top: 40px;
+}
+.box{
+    border: 2px solid var(--terciary-dark);
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 2.5em;
+    padding: 10px;
+    margin: 20px;
+}
+.settings-button::after{
+    content: '\f013';
+    font-family: 'FontAwesome';
+    font-size: 25px;
+    color: var(--terciary-dark);
+    background: transparent;
+    cursor: pointer;
+    transition: .5s;
+
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 1;
+}
+.settings-button:hover::after{
+    cursor: pointer;
+    color: var(--primary-dark);
+}
+.botao-modo-escuro{
+    font-size: 30px;
+    cursor: pointer;
+    transition: .5s;
+
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    z-index: 1;
+    padding: 7px;
+    border-radius: 25%;
+}
+.botao-modo-escuro-light{
+    color: var(--secondary-light);
+    background: var(--terciary-light);
+}
+.botao-modo-escuro-dark{
+    color: var(--terciary-light);
+    background: var(--secondary-dark);
+}
+.botao-modo-escuro-light::before{
+    font: var(--fa-font-solid);
+    content: var(--modo-escuro-sol);
+}
+.botao-modo-escuro-dark::before{
+    font: var(--fa-font-solid);
+    content: var(--modo-escuro-lua);
+}
+.botao-modo-escuro-light:hover{
+    color: var(--terciary-light);
+    background: var(--secondary-light);
+}
+.botao-modo-escuro-dark:hover{
+    color: var(--secondary-dark);
+    background-color: var(--terciary-dark);
+}
+.botao-recomecar{
+    font-family: var(--font-family);
+    height: 50px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    transition: .5s;
+    cursor: pointer;
+
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1;
+}
+.botao-recomecar-dark{
+    color: var(--terciary-dark);
+    background-color: var(--secondary-dark);
+}
+.botao-recomecar-light{
+    color: var(--terciary-dark);
+    background-color: var(--terciary-light);
+}
+.botao-recomecar-dark:hover{
+    color: var(--secondary-dark);
+    background-color: var(--terciary-dark);
+}
+.botao-recomecar-light:hover{
+    color: var(--terciary-light);
+    background-color: var(--primary-light);
+}
+#my-canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}

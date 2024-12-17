@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Número Secreto</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body class="bg bg-dark">
+    <span class="botao-modo-escuro botao-modo-escuro-dark" id="botao-modo-escuro"></span>
+    <button class="botao-recomecar botao-recomecar-dark" id="botao-recomecar">Recomeçar</button>
+
+    <div id="resposta">
+        <h1>Acerte o número secreto</h1>
+
+        <h3>O número secreto está entre 
+            <span id="menor-valor"> 0 </span> 
+            e
+            <span id="maior-valor"> 100 </span>
+        </h3>
+    </div>
+    <div id="chute" class="mensagem">
+    </div>
+</body>
+    <script src="node_modules/confetti-js/dist/index.min.js"></script>
+    <script src="assets/app/confetes.js"></script>
+    <script src="assets/app/NumeroSecreto.js"></script>
+    <script src="assets/app/sortearNumero.js"></script>
+    <script src="assets/app/reconhecimentoDeVoz.js"></script>
+    <script src="assets/app/validacao.js"></script>
+    <script src="assets/app/resultado.js"></script>
+    <script src="assets/app/sons.js"></script>
+    <script src="assets/app/recomecar.js"></script>
+    <script src="assets/app/modoEscuro.js"></script>
+</html>
