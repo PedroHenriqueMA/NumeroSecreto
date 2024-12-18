@@ -1,5 +1,8 @@
-const divResult = document.querySelector("#resposta");
-function formataResultado(numero){
+import { Confetes } from "./confetes.js";
+import { divResult, elementoChute, numeroSecreto } from "./main.js";
+import sons from "./sons.js";
+
+export function formataResultado(numero){
     if (numero === numeroSecreto){
         divResult.innerHTML = `
             <h2>Parabéns, Você acertou !!</h2>
@@ -9,7 +12,7 @@ function formataResultado(numero){
         `;
         elementoChute.innerHTML = `<div></div>`;
         Confetes();
-        tocar(aplausos)
+        sons.tocar()
         return
         
     }else if (numero > numeroSecreto){

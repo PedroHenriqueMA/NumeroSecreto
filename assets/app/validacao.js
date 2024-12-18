@@ -1,4 +1,7 @@
-function verificaValidadeChute(chute){
+import { formataResultado } from "./resultado.js"
+import { elementoChute, maiorValor, menorValor } from "./main.js"
+
+export function verificaValidadeChute(chute){
     const numero =+ chute
 /* =+ serve para tornar 'numero=NaN' se o chute for diferente de um numero por n ser possivel somar*/
     if (chuteNaoEUmNumero(numero)){

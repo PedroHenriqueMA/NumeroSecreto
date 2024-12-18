@@ -1,12 +1,8 @@
-const botaoModoEscuro = document.querySelector('#botao-modo-escuro');
-const bg = document.querySelector('body')
-botaoModoEscuro.addEventListener('click', () => {
-    trocarCores();
-})
-
-function trocarCores(){
+export function trocarCores(){
+    const bg = document.querySelector('body')
     let listaElementos = [];
-    for(i = 0; i < bg.children.length; i++){
+    
+    for(var i = 0 ; i < bg.children.length ; i++){
         if(bg.children.item(i).classList != '' && bg.children.item(i).classList != 'mensagem'){
             listaElementos.push(bg.children.item(i).className);
         }
