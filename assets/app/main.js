@@ -7,7 +7,6 @@ const recognition = new SpeechRecognition();
 export const menorValor = 0;
 export const maiorValor = 100;
 export var numeroSecreto = gerarNumeroAleatorio();
-console.log(numeroSecreto)
 export const elementoChute = document.querySelector('#chute');
 export const divResult = document.querySelector("#resposta");
 const elementoMaiorValor = document.querySelector('#maior-valor');
